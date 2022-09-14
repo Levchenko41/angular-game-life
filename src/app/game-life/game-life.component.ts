@@ -77,7 +77,7 @@ export class GameLifeComponent implements OnInit {
     Object.values(this.pop).forEach((agent: any) => {
       const alive = countAliveAround(agent, this.pop);
       if (alive == 2 || alive == 3) {
-        evolved[`${agent.x}:${agent.y}`] = agent;
+        evolved[`${agent.x}:${agent.y}`] =  agent;
       }
       if (neighborsOf(agent)) {
         neighborsOf(agent)!.forEach((neiborAgent: any) => {
